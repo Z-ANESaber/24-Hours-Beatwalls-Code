@@ -1,0 +1,1514 @@
+# --------------------------------------------------------
+# G A S H I - 2 4 H O U R S
+# Mapped by Z-ANESaber
+# Map download: https://beatsaver.com/beatmap/144e6
+# Playthrough: https://youtu.be/bCQg3JePfa8
+# ---------------------------------------------------------
+
+# I tried to make the code as understandable as possible. You can tell me if it worked or not (probably not)
+
+# --------------------------------------------------------------
+# Time Info
+# (Info: Timestamps are in beats and in minutes (min:sec) timestamps are from the official playthrough video (listed above))
+#   31  - 64  > Intro 
+#   0:15 - 0:31
+# --------------------------
+#   127 - 155 > Pre Whatever
+#   0:31 - 1:15
+# --------------------------
+#   155 - 160 > Buildup
+#   1:15 - 1:17
+# --------------------------
+#   160 - 192 > Drop 1
+#   1:17 - 1:33
+# --------------------------
+#   192 - 224 > Verse 1
+#   1:33 - 1:48
+# --------------------------
+#   224 - 253 > Drop 2
+#   1:48 - 2:04
+# --------------------------
+#   253 - 286 > Verse 2
+#   2:04 - 2:19
+# --------------------------
+#   286 - 317 > Pre Chorus
+#   2:19 - 2:35
+# --------------------------
+#   317 - 349 > Chorus
+#   2:35 - 2:50
+# --------------------------
+#   349 - 352 > Verse 3
+#   2:50 - 3:05
+# --------------------------
+#   352 - 415 > Last Chorus
+#   3:05 - 3:21
+# --------------------------
+#   415 - 511 > Outro / Ending
+#   3:21 - 4:10
+# --------------------------
+
+
+# Time to get serious
+
+# ------------------------------------------------------------
+# Before we start I gotta add the song info
+modtype: NE
+Characteristic: Standard
+Difficulty: Expert
+halfJumpDuration: 1.0
+# ------------------------------------------------
+
+# So getting started now
+	
+# Intro ---------------------------------------------
+line:
+	beat: 31 + r*d
+	duration: 8
+	p0: 4, 1, 1
+	p1: 4, 4, 1
+	color: gradient(cyan,red)
+	repeat: 4
+	mirror: 2
+	
+helix
+	beat: 64
+	amount: 45
+	radius: 4
+	duration: 0.5
+	localrotationoffset: 90
+	rotationamount: 180
+	wallspeed: -1
+	color: gradient(green,blue)
+	mirror: 2
+	
+# more intro	
+line:
+	beat: 63
+	duration: 32
+	p0: 4, 2, 1
+	p1: 4, 2, 1
+	mirror: 2
+	
+line:
+	beat: 71
+	duration: 24
+	p0: 3, 1, 0.5
+	p1: 3, 1, 0.5
+	mirror: 2
+	
+line:
+	beat: 79
+	duration: 16
+	p0: 2, 3, 0.5
+	p1: 2, 3, 0.5
+	mirror: 2
+	
+line:
+	beat: 87
+	duration: 8
+	p0: 1.5, 0.5, 0.5
+	p1: 1.5, 0.5, 0.5
+	mirror: 2
+	
+helix
+	beat: 95.5
+	amount: 50
+	radius: 3
+	duration: 0.5
+	rotationamount: 360
+	wallspeed: -0.5
+	color: pink
+
+# particles
+
+randomNoise
+	beat: 99
+    p0: 6.5,0,0
+    p1: 9,0,28
+    amount: 98
+    changeWidth: random(0.5,1)
+    changeDuration: random(0.125,0.25)
+	changeHeight: random(0.5,1)
+    localRotY: random(-90,90)
+    localRotZ: random(-90,90)
+    localRotX: random(-90,90)
+    color: gradient(cyan,white)
+	mirror: 2
+
+line
+	beat: 99
+	amount: 55
+	p0: 10,7,0
+	p1: 6,-4,1
+	mirror: 2
+	changeduration: 0.25
+	color: gradient(blue,cyan)
+
+# Pre Whatever ------------------------------------------------
+
+line
+	beat: 127.5
+	amount: 55
+	p0: 4,6,1
+	p1: 7,3,0
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.125
+	changewidth: 2.5
+	color: gradient(blue,cyan)
+
+line:
+	beat: 127
+	amount: 24
+	duration: 2
+	p0: 0,0,0
+	p1: -4,1.5,3
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+helix
+	beat: 143.5
+	amount: 50
+	radius: 3
+	duration: 0.5
+	rotationamount: 360
+	wallspeed: -0.5
+	color: gradient(red,black)
+
+# Buildup 1,2,3,4 -------------------------------------------------
+
+wall:
+	beat: 155.5 # +1
+	p0: 4,3,-0.1
+	p1: 4,3,0.5
+	localrotX: 90
+	localrotY: 45
+	localrotZ: 90
+	changeWidth: 2
+	changeHeight: 0.25
+	
+wall:
+	beat: 156.5 # +1
+	p0: -4,-1,-0.1
+	p1: -4,-1,0.5
+	localrotX: -90
+	localrotY: -45
+	localrotZ: -90
+	changeWidth: 2
+	changeHeight: 0.25
+
+wall:
+	beat: 157.5 # +1
+	p0: -4,3,-0.1
+	p1: -4,3,0.5
+	localrotX: 90
+	localrotY: -45
+	localrotZ: -90
+	changeWidth: 2
+	changeHeight: 0.25
+
+wall:
+	beat: 157.5 # +1
+	p0: 4,-1,-0.1
+	p1: 4,-1,0.5
+	localrotX: -90
+	localrotY: 45
+	localrotZ: 90
+	changeWidth: 2
+	changeHeight: 0.25
+
+wall:
+	beat: 158.5 # +1
+	p0: -4,-1,-0.1
+	p1: -4,-1,0.5
+	localrotX: 90
+	localrotY: 45
+	localrotZ: 90
+	changeWidth: 2
+	changeHeight: 0.25
+
+wall:
+	beat: 158.5 # +1
+	p0: 4,3,-0.1
+	p1: 4,3,0.5
+	localrotX: -90
+	localrotY: -45
+	localrotZ: -90
+	changeWidth: 2
+	changeHeight: 0.25
+
+# Drop 1 ----------------------------
+helix
+	beat: 160
+	amount: 45
+	radius: 4
+	duration: 0.5
+	localrotationoffset: 90
+	rotationamount: 180
+	wallspeed: -1
+	color: gradient(red,blue)
+	mirror: 2
+
+# snare
+line
+	beat: 161
+	amount: 86
+	p0: 7,5,0
+	p1: 7,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.15
+	changewidth: 1
+	color: rainbow(2,0.5)
+
+# two bounce snares
+
+line
+	beat: 163
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+
+line
+	beat: 164
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+	color: pink
+
+# the rest of the drums
+
+line
+	beat: 164.5
+	amount: 86
+	p0: 3,0,0
+	p1: 12,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.25
+	changewidth: 2
+	color: gradient(red,cyan)
+
+line:
+	beat: 165
+	amount: 24
+	duration: 0.5
+	p0: -4,0,0
+	p1: 0,0,1
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 167
+	amount: 86
+	p0: 0,5,0
+	p1: 0,5.5,1
+	changeduration: 0.15
+	changewidth: 1
+	color: pink
+
+helix
+	beat: 168
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: 360
+	wallspeed: -1
+	color: gradient(green,cyan)
+
+line:
+	beat: 170
+	amount: 32
+	duration: 1
+	p0: 2,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 171
+	amount: 32
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,0.75
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 172.5
+	amount: 32
+	duration: 0.5
+	p0: 5,0,0
+	p1: 0,0,0.5
+	changewidth: 0.5
+	wallspeed: -0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 175.5
+	amount: 128
+	p0: 7,5,0
+	p1: 7,-2,1
+	mirror: 2
+	changeduration: 0.5
+	changewidth: 1
+	changeHeight: 1.5
+	color: gradient(pink,red)
+
+line:
+	beat: 181
+	amount: 64
+	duration: 1
+	p0: 8,3,0
+	p1: 0,-1,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(black,red)
+	mirror: 2
+
+line:
+	beat: 184
+	amount: 64
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(red,black)
+	mirror: 2
+
+helix
+	beat: 187
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: -360
+	wallspeed: -1
+
+line:
+	beat: 189
+	amount: 64
+	duration: 0.5
+	p0: -5,0,0
+	p1: 5,0,0.5
+	changewidth: 0.25
+	wallspeed: -1
+
+# Verse 1 ----------------------------------------------
+line:
+	beat: 192
+	amount: 64
+	duration: 1
+	p0: 0,0,0
+	p1: -6,1.5,1
+	changewidth: 0.25
+	wallspeed: -1
+
+helix
+	beat: 200
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: 360
+	wallspeed: -1
+
+# double line
+#up
+line:
+	beat: 208
+	amount: 64
+	duration: 1
+	p0: 6,4,0
+	p1: -6,4,1
+	changewidth: 0.25
+	wallspeed: -1
+#down
+line:
+	beat: 208
+	amount: 64
+	duration: 1
+	p0: -6,0,0
+	p1: 6,0,1
+	changewidth: 0.25
+	wallspeed: -1
+
+line:
+	beat: 216
+	amount: 64
+	duration: 3
+	p0: -9,2,0
+	p1: 0,-2,0
+	changewidth: 0.25
+	changeHeight: 1
+	wallspeed: -1
+	mirror: 2
+	color: gradient(blue,green)
+
+
+# Drop 2 --------------------------------------------------------
+helix
+	beat: 224
+	amount: 45
+	radius: 4
+	duration: 0.5
+	localrotationoffset: 90
+	rotationamount: 180
+	wallspeed: -1
+	color: gradient(red,blue)
+	mirror: 2
+
+# snare
+line
+	beat: 225 # +1
+	amount: 86
+	p0: 7,5,0
+	p1: 7,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.15
+	changewidth: 1
+	color: rainbow(2,0.5)
+
+# two bounce snares
+
+line
+	beat: 227
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+
+line
+	beat: 228
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+	color: pink
+
+# other drums
+
+line
+	beat: 228.5 # +0.5
+	amount: 86
+	p0: 3,0,0
+	p1: 12,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.25
+	changewidth: 2
+	color: gradient(red,cyan)
+
+line:
+	beat: 229 # +1
+	amount: 24
+	duration: 0.5
+	p0: -4,0,0
+	p1: 0,0,1
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 231 # +1
+	amount: 86
+	p0: 0,5,0
+	p1: 0,5.5,1
+	changeduration: 0.15
+	changewidth: 1
+	color: pink
+
+helix
+	beat: 232
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: 360
+	wallspeed: -1
+	color: gradient(green,cyan)
+
+line:
+	beat: 234
+	amount: 32
+	duration: 1
+	p0: 2,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 235
+	amount: 32
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,0.75
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 236.5 # +0.5
+	amount: 32
+	duration: 0.5
+	p0: 5,0,0
+	p1: 0,0,0.5
+	changewidth: 0.5
+	wallspeed: -0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 239.5 # +0.5
+	amount: 128
+	p0: 7,5,0
+	p1: 7,-2,1
+	mirror: 2
+	changeduration: 0.5
+	changewidth: 1
+	changeHeight: 1.5
+	color: gradient(pink,red)
+
+line:
+	beat: 245
+	amount: 64
+	duration: 1
+	p0: 8,3,0
+	p1: 0,-1,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(black,red)
+	mirror: 2
+
+line:
+	beat: 248
+	amount: 64
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(red,black)
+	mirror: 2
+
+helix
+	beat: 251
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: -360
+	wallspeed: -1
+
+line:
+	beat: 253
+	amount: 64
+	duration: 0.5
+	p0: -5,0,0
+	p1: 5,0,0.5
+	changewidth: 0.25
+	wallspeed: -1
+
+# Verse 2 -------------------------------------
+line:
+	beat: 255.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 256.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 257.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 258.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 259.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 260.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 261.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 262.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 263.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 264.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 265.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 266.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 267.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 268.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 269.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 270.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 271.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 272.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 273.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 274.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 275.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 276.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 277.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 278.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 279.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 280.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 281.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 282.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 283.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 284.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 285.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+line:
+	beat: 286.5 # +0.5
+	duration: 0.5
+	p0: 4,2,0
+	p1: 4,2,0
+	wallspeed: -0.5
+	mirror: 2
+
+# Pre Chorus --------------------------------------------------------
+helix
+	beat: 288
+	amount: 45
+	radius: 4
+	duration: 0.5
+	localrotationoffset: 90
+	rotationamount: 180
+	wallspeed: -1
+	color: gradient(red,blue)
+	mirror: 2
+
+# snare
+line
+	beat: 289 # +1
+	amount: 86
+	p0: 7,5,0
+	p1: 7,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.15
+	changewidth: 1
+	color: rainbow(2,0.5)
+
+# two bounce snares
+
+line
+	beat: 291
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+
+line
+	beat: 292
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+	color: pink
+
+# other drums
+
+line
+	beat: 292.5 # +0.5
+	amount: 86
+	p0: 3,0,0
+	p1: 12,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.25
+	changewidth: 2
+	color: gradient(red,cyan)
+
+line:
+	beat: 293 # +1
+	amount: 24
+	duration: 0.5
+	p0: -4,0,0
+	p1: 0,0,1
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 295 # +1
+	amount: 86
+	p0: 0,5,0
+	p1: 0,5.5,1
+	changeduration: 0.15
+	changewidth: 1
+	color: pink
+
+helix
+	beat: 296
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: 360
+	wallspeed: -1
+	color: gradient(green,cyan)
+
+line:
+	beat: 298
+	amount: 32
+	duration: 1
+	p0: 2,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 299
+	amount: 32
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,0.75
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 300.5 # +0.5
+	amount: 32
+	duration: 0.5
+	p0: 5,0,0
+	p1: 0,0,0.5
+	changewidth: 0.5
+	wallspeed: -0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 303.5 # +0.5
+	amount: 128
+	p0: 7,5,0
+	p1: 7,-2,1
+	mirror: 2
+	changeduration: 0.5
+	changewidth: 1
+	changeHeight: 1.5
+	color: gradient(pink,red)
+
+line:
+	beat: 309
+	amount: 64
+	duration: 1
+	p0: 8,3,0
+	p1: 0,-1,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(black,red)
+	mirror: 2
+
+line:
+	beat: 312
+	amount: 64
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(red,black)
+	mirror: 2
+
+helix
+	beat: 315
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: -360
+	wallspeed: -1
+
+line:
+	beat: 317
+	amount: 64
+	duration: 0.5
+	p0: -5,0,0
+	p1: 5,0,0.5
+	changewidth: 0.25
+	wallspeed: -1
+
+# Chorus ----------------------------
+helix
+	beat: 320
+	amount: 45
+	radius: 4
+	duration: 0.5
+	localrotationoffset: 90
+	rotationamount: 180
+	wallspeed: -1
+	color: gradient(red,blue)
+	mirror: 2
+
+# snare
+line
+	beat: 321
+	amount: 86
+	p0: 7,5,0
+	p1: 7,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.15
+	changewidth: 1
+	color: rainbow(2,0.5)
+
+# two bounce snares
+
+line
+	beat: 323
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+
+line
+	beat: 324
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+	color: pink
+
+# other drums
+
+line
+	beat: 324.5
+	amount: 86
+	p0: 3,0,0
+	p1: 12,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.25
+	changewidth: 2
+	color: gradient(red,cyan)
+
+line:
+	beat: 325
+	amount: 24
+	duration: 0.5
+	p0: -4,0,0
+	p1: 0,0,1
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 327
+	amount: 86
+	p0: 0,5,0
+	p1: 0,5.5,1
+	changeduration: 0.15
+	changewidth: 1
+	color: pink
+
+helix
+	beat: 328
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: 360
+	wallspeed: -1
+	color: gradient(green,cyan)
+
+line:
+	beat: 330
+	amount: 32
+	duration: 1
+	p0: 2,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 331
+	amount: 32
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,0.75
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 332.5
+	amount: 32
+	duration: 0.5
+	p0: 5,0,0
+	p1: 0,0,0.5
+	changewidth: 0.5
+	wallspeed: -0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 335.5
+	amount: 128
+	p0: 7,5,0
+	p1: 7,-2,1
+	mirror: 2
+	changeduration: 0.5
+	changewidth: 1
+	changeHeight: 1.5
+	color: gradient(pink,red)
+
+line:
+	beat: 341
+	amount: 64
+	duration: 1
+	p0: 8,3,0
+	p1: 0,-1,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(black,red)
+	mirror: 2
+
+line:
+	beat: 344
+	amount: 64
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(red,black)
+	mirror: 2
+
+helix
+	beat: 347
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: -360
+	wallspeed: -1
+
+line:
+	beat: 349
+	amount: 64
+	duration: 0.5
+	p0: -5,0,0
+	p1: 5,0,0.5
+	changewidth: 0.25
+	wallspeed: -1
+
+# Verse 3---------------------------------------------------------
+line:
+	beat: 352
+	amount: 64
+	duration: 1
+	p0: 0,0,0
+	p1: -6,1.5,1
+	changewidth: 0.25
+	wallspeed: -1
+
+helix
+	beat: 360
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: 360
+	wallspeed: -1
+
+# double line
+#up
+line:
+	beat: 368
+	amount: 64
+	duration: 1
+	p0: 6,4,0
+	p1: -6,4,1
+	changewidth: 0.25
+	wallspeed: -1
+
+#down
+line:
+	beat: 368
+	amount: 64
+	duration: 1
+	p0: -6,0,0
+	p1: 6,0,1
+	changewidth: 0.25
+	wallspeed: -1
+
+line:
+	beat: 376
+	amount: 64
+	duration: 3
+	p0: -9,2,0
+	p1: 0,-2,0
+	changewidth: 0.25
+	changeHeight: 1
+	wallspeed: -1
+	mirror: 2
+	color: gradient(blue,green)
+
+# Last Chorus ----------------------------
+helix
+	beat: 384
+	amount: 45
+	radius: 4
+	duration: 0.5
+	localrotationoffset: 90
+	rotationamount: 180
+	wallspeed: -1
+	color: gradient(red,blue)
+	mirror: 2
+
+# snare
+line
+	beat: 385
+	amount: 86
+	p0: 7,5,0
+	p1: 7,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.15
+	changewidth: 1
+	color: rainbow(2,0.5)
+
+# two bounce snares
+
+line
+	beat: 387
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+
+line
+	beat: 368
+	p0: 2,1,0
+	p1: 2,1,0
+	mirror: 2
+	wallspeed: -0.5
+	duration: 0.5
+	color: pink
+
+# other drums
+
+line
+	beat: 388.5
+	amount: 86
+	p0: 3,0,0
+	p1: 12,0,0.5
+	localroty: 90
+	localrotx: 90
+	localrotz: 90
+	mirror: 2
+	changeduration: 0.25
+	changewidth: 2
+	color: gradient(red,cyan)
+
+line:
+	beat: 389
+	amount: 24
+	duration: 0.5
+	p0: -4,0,0
+	p1: 0,0,1
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 391
+	amount: 86
+	p0: 0,5,0
+	p1: 0,5.5,1
+	changeduration: 0.15
+	changewidth: 1
+	color: pink
+
+helix
+	beat: 392
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: 360
+	wallspeed: -1
+	color: gradient(green,cyan)
+
+line:
+	beat: 394
+	amount: 32
+	duration: 1
+	p0: 2,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 395
+	amount: 32
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,0.75
+	changewidth: 0.5
+	wallspeed: -1
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line:
+	beat: 396.5
+	amount: 32
+	duration: 0.5
+	p0: 5,0,0
+	p1: 0,0,0.5
+	changewidth: 0.5
+	wallspeed: -0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+	beat: 399.5
+	amount: 128
+	p0: 7,5,0
+	p1: 7,-2,1
+	mirror: 2
+	changeduration: 0.5
+	changewidth: 1
+	changeHeight: 1.5
+	color: gradient(pink,red)
+
+line:
+	beat: 405
+	amount: 64
+	duration: 1
+	p0: 8,3,0
+	p1: 0,-1,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(black,red)
+	mirror: 2
+
+line:
+	beat: 408
+	amount: 64
+	duration: 1
+	p0: 0,0,0
+	p1: 5,0,1
+	changewidth: 0.25
+	wallspeed: -1
+	color: gradient(red,black)
+	mirror: 2
+
+helix
+	beat: 411
+	amount: 64
+	radius: 4
+	duration: 1
+	rotationamount: -360
+	wallspeed: -1
+
+line:
+	beat: 413
+	amount: 64
+	duration: 0.5
+	p0: -5,0,0
+	p1: 5,0,0.5
+	changewidth: 0.25
+	wallspeed: -1
+
+# Outro/Ending -----------------------------------------------------
+# particles
+randomNoise
+	beat: 415
+    p0: 4.7,0,0
+    p1: 7,0,28
+    amount: 128
+    changeWidth: random(0.1,0.2)
+    changeDuration: random(0.1,0.2)
+	changeHeight: random(0.1,0.2)
+    localRotY: random(-90,90)
+    localRotZ: random(-90,90)
+    localRotX: random(-90,90)
+    color: white
+	mirror: 2
+
+# more particles
+randomNoise
+	beat: 447
+    p0: 4.7,0,0
+    p1: 7,0,63
+    amount: 512
+    changeWidth: random(0.1,0.2)
+    changeDuration: random(0.1,0.2)
+	changeHeight: random(0.1,0.2)
+    localRotY: random(-90,90)
+    localRotZ: random(-90,90)
+    localRotX: random(-90,90)
+    color: white
+	mirror: 2
+
+# rainbow floor
+line:
+	beat: 479 + r*d
+	amount: 32
+	duration: 4
+	p0: 0,0,0
+	p1: -2.5,0,2
+	p2: 0,0,2
+	addWidth: 0.5
+	changewidth: 0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+	repeat: 7.75
+
+# ------------------------------------------------------------
+# So thats it
+
+# Thank you for reading. If you have any questions about this code feel free to contact me!
+# Discord: Niqu#0666
+#
+# Have a nice day
