@@ -13,6 +13,8 @@ Timestamps in beats and in minutes (min:sec) are included in the .bw file
 -------------------------------------------------------------------------
 # Dependencies:
 - BeatWalls (by SpookyGhost) https://github.com/spookyGh0st/beatwalls
+- NoodleExtensions Beat Saber Mod (by Aeroluna) https://github.com/Aeroluna/NoodleExtensions/releases
+- Chroma Beat Saber Mod (by Aeroluna) https://github.com/Aeroluna/Chroma/releases
 - Any text editing software (Notepad++, Editor, Visual Studio)
 - (Optional) any Beat Saber map editor (Mediocre Map Assistant 2 is a good option) https://github.com/Compstudent/MediocreMapAssistant2
 -------------------------------------------------------------------------
